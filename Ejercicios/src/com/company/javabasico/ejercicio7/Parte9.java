@@ -1,4 +1,4 @@
-package com.company.javabasico;
+package com.company.javabasico.ejercicio7;
 
 import java.io.*;
 

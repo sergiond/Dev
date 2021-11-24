@@ -1,9 +1,6 @@
 package com.company.javabasico.ejercicio7;
 
-import com.company.javabasico.Parte9;
-
 import java.io.FileNotFoundException;
-import java.sql.SQLOutput;
 
 public class Main {
     /*
