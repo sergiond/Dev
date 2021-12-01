@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+</head>
+<body>
+    <!--
+        Ejercicio 2
+        Crea un formulario en el que haya que introducir los siguientes datos: Nombre, Apellido, e-mail, teléfono y dirección.
+        Como segunda parte del ejercicio deberás crear una tabla, esta tabla tendrá 4 columnas y 4 filas, en esta tabla deberás hacer que:
+
+        - Una de las celdas ocupe dos columnas.
+        - Una de las celdas ocupe dos filas.
+    -->
+    <form>
+        <label for="Nombre">Nombre: </label><br>
+        <input type="text" id="Nombre"><br>
+        <label for="Apellido"> Apellido:</label><br>
+        <input type="text" id="Apellido"><br>
+        <label for="E-mail">E-mail:</label><br>
+        <input type="text" id="E-mail"><br>
+        <label for="Telefono">Teléfono:</label><br>
+        <input type="text" id="Telefono"><br>
+        <label for="Dirección">Dirección: </label><br>
+        <input type="text" id="Direccion"><br>
+    </form>
+    <table border="1">
+        <tr>
+            <td colspan="2">A</td>
+            <td>C</td>
+            <td>D</td>
+        </tr>
+        <tr>
+            <td>A</td>
+            <td>B</td>
+            <td>C</td>
+            <td>D</td>
+        </tr>
+        <tr>
+            <td>A</td>
+            <td>B</td>
+            <td>C</td>
+            <td rowspan="2">D</td>
+        </tr>
+        <tr>
+            <td>A</td>
+            <td>B</td>
+            <td>C</td>
+        </tr>
+    </table>
+</body>
+</html>
