@@ -1,0 +1,12 @@
+p {
+  color: darkcyan;
+}
+.miparrafo {
+  color: darkgreen;
+}
+div p {
+  color: darkgoldenrod;
+}
+.miparrafo p {
+  color: darkmagenta;
+}
