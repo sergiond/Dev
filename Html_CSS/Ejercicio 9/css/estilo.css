@@ -1,0 +1,37 @@
+.animacion1 {
+  width: 150px;
+  height: 150px;
+  background: #5874b1;
+  border-radius: 5px;
+}
+.animacion1:hover {
+  animation: animacion1 5s infinite;
+}
+@keyframes animacion1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animacion2 {
+  width: 150px;
+  height: 150px;
+  background-color: indigo;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+.animacion2:hover {
+  animation: animacion2 3s;
+}
+@keyframes animacion2 {
+  0% {
+    transform: translatex(0px);
+  }
+  100% {
+    transform: translatex(150px);
+    opacity: 0;
+  }
+}
