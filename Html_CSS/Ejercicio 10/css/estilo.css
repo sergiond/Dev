@@ -1,0 +1,28 @@
+.resize {
+  background-color: red;
+  width: 1024px;
+  height: 256px;
+}
+@media only screen and (max-width: 600px) {
+  div.resize {
+    background-color: green;
+  }
+}
+.container {
+  background-color: grey;
+  width: 600px;
+  height: 338px;
+}
+.container > iframe {
+  height: 100%;
+  width: 100%;
+}
+
+@media only screen and (max-width: 500px) {
+  div.container > iframe {
+    opacity: 0;
+  }
+  div.container {
+    background-image: url("https://marketplace.canva.com/EAEK4dC2olw/1/0/1600w/canva-arco%C3%ADris-gradiente-rosa-y-naranja-fondo-virtual-para-zoom-c3PYha1JI9M.jpg");
+  }
+}
