@@ -1,0 +1,39 @@
+@import "variables";
+
+*,
+*::before,
+*::after {
+  padding: 0px;
+  margin: 0px auto;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+.contenedor {
+  color: darkcyan;
+  font-family: $font-stack;
+  font-size: $font-size;
+}
+.word {
+  @for $i from 1 to $wordcount {
+    &:nth-child(#{$i}) {
+      animation-delay: ($speed / ($wordcount + 1) * $i)-$speed;
+    }
+  }
+  animation: fadein $speed infinite ease-in-out;
+}
+@keyframes fadein {
+  0%,
+  5%,
+  100% {
+    opacity: 1;
+    filter: blur(0%);
+  }
+  20%,
+  80% {
+    opacity: 0;
+    filter: blur(1em);
+  }
+}
