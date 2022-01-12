@@ -1,0 +1,19 @@
+div {
+  color: blue;
+}
+.ejemplo {
+  color: blueviolet;
+}
+#ejemplo,
+#ejemplo2 {
+  color: brown;
+}
+.ejemplo p {
+  color: chartreuse;
+}
+.prueba {
+  color: chocolate;
+}
+ul li a {
+  color: cornflowerblue;
+}
