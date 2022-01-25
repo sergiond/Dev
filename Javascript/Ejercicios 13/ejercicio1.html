@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo1.css">
+    <title>Ejercicio 1</title>
+</head>
+<body>
+    <!-- 1. Vamos a crear un div que será un rectángulo , o la forma geométrica que prefiráis.
+El objetivo es que al entrar en ese rectángulo con nuestro ratón, el fondo se establezca como blanco, mientras que cuando salga, este cambie a un color aleatorio  
+Para ello tendremos que crear tres funciones, una que genere y devuelva un código de color (con su almohadilla #), otra que aplique ese nuevo código de color al fondo y por último una función que establezca el color en blanco de nuevo.-->
+<div class="rectangulo" onmouseleave="setBlanco()" onmouseenter="setColor()">Cambia Color</div>
+
+<script>
+    function setBlanco() {
+        document.body.style.backgroundColor = "white";
+    }
+    const getRandomColor = () => {
+        var letters = '0123456789ABCDEF';
+        var color = '#';
+        for (var i = 0; i < 6; i++) {
+            color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+    }
+    const setColor = () =>{
+        document.body.style.backgroundColor = getRandomColor();
+    }
+</script>
+</body>
+</html>

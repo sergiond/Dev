@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Vamos a realizar ahora una especie de "juego" en el que tendremos que adivinar las coordenadas de un lugar emblemático del mundo de entre tres opciones. La manera de seleccionar una respuesta será copiando las coordenadas.
+    
+    Al copiar la linea correcta, un aviso los aparecerá en la pantalla mediante un alert, si no acertamos también lo notificará.-->
+    <p> Selecciona las coordenadas de la torre de H&eacute;rcules</p>
+    <div id=coordenadas1>43º 23' 09.56" N 8º 24' 22.21" O</div>
+    <div id=coordenadas2>39°27'18.47" N 0°21'14.18" O</div>
+    <div id=coordenadas3>37º 10' 26.72" N 3º 35' 03.89" O</div>
+    <script>        
+        coordenadas1.oncopy = function (event) {
+            alert("Coordenadas correctas")
+        };
+        coordenadas2.oncopy = coordenadas3.oncopy= function (event) {
+            alert("Coordenadas incorrectas")
+        };
+    </script>
+</body>
+</html>
