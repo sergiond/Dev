@@ -51,7 +51,7 @@ class Clock extends Component {
 }
 export default Clock;
 */
-import React, { Component } from 'react'
+import React from 'react'
 import '../../styles / clock.scss';
 
 export const ClockHook = () => {
