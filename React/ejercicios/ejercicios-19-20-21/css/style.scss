@@ -1,0 +1,14 @@
+$principal_color: #fff;
+$secondari_color: #303f9f;
+$content: #1c7293;
+
+body {
+  background-color: $principal_color;
+}
+h4,
+h2 {
+  color: $secondari_color;
+}
+p {
+  color: $content;
+}
