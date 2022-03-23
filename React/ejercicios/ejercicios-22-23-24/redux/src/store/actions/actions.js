@@ -27,9 +27,8 @@ export const toggleTodo = (id) => {
 
         type: TOGGLE_TODO,
         //se devuelve el ID para que lo encuentre el reducer y lo actualice
-        payload: {
-            id
-        }
+         id
+        
     
     }
 }
